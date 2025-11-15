@@ -1,11 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Academia Jedi - Nueva Fuerza te Acompaña</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    
+    <!-- Contenedor principal -->
+    <div class="contenedor-principal">
+        
+        <!-- Encabezado con logo de Star Wars -->
+        <div class="encabezado">
+            <img src="assets/Star_Wars_Logo.svg" alt="Star Wars Logo" class="logo">
+            <h1>Academia Jedi</h1>
+            <p class="subtitulo">Que la fuerza te acompañe!</p>
+        </div>
+
+        <!-- Formulario de registro -->
+        <div class="formulario">
+            
+            <!-- Nombre del Aprendiz -->
+            <div class="campo">
+                <label for="nombre">Nombre del Aprendiz</label>
+                <input type="text" id="nombre" placeholder="Introduce tu nombre aquí">
+            </div>
+
+            <!-- Especie -->
+            <div class="campo">
+                <label for="especie">Especie</label>
+                <select id="especie">
+                    <option value="">humano</option>
+                    <option value="wookiee">Wookiee</option>
+                    <option value="twilek">Twi'lek</option>
+                    <option value="zabrak">Zabrak</option>
+                    <option value="togruta">Togruta</option>
+                </select>
+                <p class="ayuda">Selecciona tu especie</p>
+            </div>
+
+            <!-- Edad -->
+            <div class="campo">
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" placeholder="Introduce tu edad">
+            </div>
+
+            <!-- Planeta de Origen -->
+            <div class="campo">
+                <label for="planeta">Planeta de Origen</label>
+                <input type="text" id="planeta" placeholder="Introduce tu planeta de origen">
+            </div>
+
+            <!-- Nivel de Conexión con la Fuerza -->
+            <div class="campo">
+                <label>Nivel de Conexión con la Fuerza</label>
+                <div class="botones-nivel">
+                    <button type="button" class="btn-nivel">Bajo</button>
+                    <button type="button" class="btn-nivel">Medio</button>
+                    <button type="button" class="btn-nivel">Alto</button>
+                </div>
+                <p class="ayuda">Selecciona tu nivel</p>
+            </div>
+
+            <!-- Selección de Sables de Luz Preferidos -->
+            <div class="campo">
+                <label>Selección de Sables de Luz Preferidos</label>
+                
+                <div class="grid-sables">
+                    <div class="sable-opcion">
+                        <input type="checkbox" id="azul" value="azul">
+                        <label for="azul">Azul</label>
+                    </div>
+
+                    <div class="sable-opcion">
+                        <input type="checkbox" id="verde" value="verde">
+                        <label for="verde">Verde</label>
+                    </div>
+
+                    <div class="sable-opcion">
+                        <input type="checkbox" id="morado" value="morado">
+                        <label for="morado">Morado</label>
+                    </div>
+
+                    <div class="sable-opcion">
+                        <input type="checkbox" id="rojo" value="rojo">
+                        <label for="rojo">Rojo</label>
+                    </div>
+
+                    <div class="sable-opcion-grande">
+                        <input type="checkbox" id="doble" value="doble">
+                        <label for="doble">Doble Hoja</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comentarios Adicionales -->
+            <div class="campo">
+                <label for="comentarios">Comentarios Adicionales</label>
+                <textarea id="comentarios" rows="4" placeholder="Escribe tus comentarios aquí"></textarea>
+            </div>
+
+            <!-- Botón de envío -->
+            <button type="submit" class="boton-enviar">
+                Enviar solicitud al Consejo Jedi
+            </button>
+
+            <!-- Nota final -->
+            <div class="nota">
+                <p class="nota-titulo">Nota</p>
+                <p>Bienvenido a tu nuevo camino</p>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>

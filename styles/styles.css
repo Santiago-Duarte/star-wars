@@ -1,1 +1,162 @@
-/* aca iran todos los estilos */
+/* Importar fuente Orbitron */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+/* Color de fondo de la página */
+body {
+  background-color: black;
+  color: cyan;
+  font-family: "Orbitron", Arial;
+  padding: 20px;
+}
+
+/* Caja principal */
+.contenedor-principal {
+  width: 350px;
+  margin: 0 auto;
+  background-color: #1a1a1a;
+  border: 2px solid cyan;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+/* Título y logo */
+.logo {
+  width: 80px;
+}
+
+h1 {
+  color: cyan;
+  font-size: 24px;
+}
+
+.subtitulo {
+  color: cyan;
+  font-size: 14px;
+}
+
+.encabezado {
+  border-bottom: 1px solid cyan;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+/* Espacios entre campos */
+.campo {
+  margin-bottom: 20px;
+}
+
+/* Etiquetas */
+label {
+  color: cyan;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Cajas de texto */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  background-color: black;
+  border: 2px solid #00f2ff;
+  border-radius: 5px;
+  padding: 10px;
+  color: #00f2ff;
+  font-size: 14px;
+  font-family: "Orbitron", Arial;
+}
+
+/* Placeholder con fuente Orbitron */
+input::placeholder,
+textarea::placeholder {
+  font-family: "Orbitron", Arial;
+  color: #00f2ff;
+  opacity: 0.6;
+}
+
+/* Texto de ayuda */
+.ayuda {
+  color: #00f2ff;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Botones de nivel */
+.botones-nivel {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-nivel {
+  width: 33%;
+  background-color: black;
+  border: 2px solid #00f2ff;
+  color: cyan;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Orbitron", Arial;
+}
+
+.btn-nivel:hover {
+  background-color: #00f2ff;
+  color: black;
+}
+
+/* Cajas de checkboxes */
+.grid-sables {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.sable-opcion,
+.sable-opcion-grande {
+  background-color: black;
+  border: 2px solid #00f2ff;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.sable-opcion-grande {
+  grid-column: 1 / 3;
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #00f2ff;
+}
+
+/* Botón de enviar */
+.boton-enviar {
+  width: 100%;
+  background-color: #00f2ff;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-family: "Orbitron", Arial;
+}
+
+/* Nota final */
+.nota {
+  background-color: black;
+  border: 1px solid #00f2ff;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+}
+
+.nota-titulo {
+  color: #00f2ff;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
